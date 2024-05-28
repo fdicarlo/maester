@@ -130,6 +130,7 @@ jobs:
           $PesterConfiguration.Output.Verbosity = 'None'
 
           # Run Maester tests
+          # Use Invoke-Maester -Path tests/ in order to run all tests
           $results = Invoke-Maester -Path tests/Maester/ -PesterConfiguration $PesterConfiguration -OutputFolder test-results -OutputFolderFileName "test-results" -PassThru
 
           # Add step summary
